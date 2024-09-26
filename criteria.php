@@ -12,7 +12,7 @@ include_once("TFilter.class.php");
 $criteria = new TCriteria;
 $criteria->add(new TFilter('idade','<',16),TExpression::OR_OPERATOR);
 $criteria->add(new TFilter('idade','>',60),TExpression::OR_OPERATOR);
-echo $criteria-> dump();
+echo $criteria->dump();
 echo "<br>\n";
 
 // aqui vemos um exemplo do critério utilizando o operador lógico AND
